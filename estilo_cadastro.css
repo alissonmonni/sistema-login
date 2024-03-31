@@ -1,0 +1,81 @@
+body {
+   background-color: #000;
+   color: #fff;
+   font-family: Arial, sans-serif;
+ }
+ 
+form {
+   max-width: 400px;
+   margin: 150px auto;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.8);
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+   opacity: 0; /* Define a opacidade inicial para 0 */
+   animation: fadeIn 1.5s forwards; /* Define a animação de entrada */
+ }
+ 
+ @keyframes fadeIn {
+   from {
+     opacity: 0; /* Inicia com opacidade 0 */
+   }
+   to {
+     opacity: 1; /* Termina com opacidade 1 */
+   }
+ }
+ 
+ h1 {
+   text-align: center;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ input[type="password"] {
+   width: 95%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.1);
+   color: #fff;
+   opacity: 0; /* Define a opacidade inicial para 0 */
+   animation: slideIn 2.5s forwards; /* Define a animação de entrada */
+ }
+ 
+ @keyframes slideIn {
+   from {
+     opacity: 0; /* Inicia com opacidade 0 */
+     transform: translateY(-20px); /* Desloca para cima */
+   }
+   to {
+     opacity: 1; /* Termina com opacidade 1 */
+     transform: translateY(0); /* Volta à posição original */
+   }
+ }
+ 
+ button[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #4caf50;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ button[type="submit"]:hover {
+   background-color: #45a049;
+ }
+ 
+ a {
+   display: block;
+   text-align: center;
+   color: #aaa;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ a:hover {
+   color: #fff;
+ }
